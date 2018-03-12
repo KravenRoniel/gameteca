@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Cadastro Game
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Código</ion-label>
+        <ion-input type="text" [(ngModel)]="jogo.codigo"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="jogo.nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Categoria</ion-label>
+        <ion-input type="text" [(ngModel)]="jogo.categoria"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Desenvolvedor</ion-label>
+        <ion-input type="text" [(ngModel)]="jogo.desenvolvedor"></ion-input>
+      </ion-item>
+
+    </ion-list>
+  
+  </ion-content>
+  
