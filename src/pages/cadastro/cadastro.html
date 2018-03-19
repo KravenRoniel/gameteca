@@ -3,6 +3,13 @@
       <ion-title>
         Cadastro Game
       </ion-title>
+
+      <ion-buttons end>
+        <button ion-button icon-only (click)="salvar(jogo)">
+          <ion-icon name="checkmark"></ion-icon>
+        </button>
+      </ion-buttons>
+
     </ion-navbar>
   </ion-header>
   
@@ -12,7 +19,7 @@
 
       <ion-item>
         <ion-label floating>Código</ion-label>
-        <ion-input type="text" [(ngModel)]="jogo.codigo"></ion-input>
+        <ion-input type="text" [(ngModel)]="jogo.codigo" [disabled]="edicao"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -33,4 +40,3 @@
     </ion-list>
   
   </ion-content>
-  
